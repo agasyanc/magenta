@@ -1,4 +1,4 @@
-import DocumentNode from "./document/document";
+import DocumentNode from "./document/document_node";
 import Viewport from "./viewport/viewport";
 
 export default class Magenta {
