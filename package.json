@@ -1,0 +1,20 @@
+{
+  "name": "magenta",
+  "version": "0.1.0",
+  "main": "dist/magenta.umd.js",
+  "module": "dist/magenta.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  }
+}

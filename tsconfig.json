@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",   // Use ES modules
+    "target": "ESNext",   // Use the latest ECMAScript features
+    "declaration": true,  // Generate .d.ts declaration files
+    "declarationDir": "./dist", // Specify the directory for declaration files
+    "esModuleInterop": true, // Ensures compatibility with CommonJS modules
+    "strict": true,       // Enable strict type checking
+    "skipLibCheck": true, // Skips checking declaration files for libraries
+    "moduleResolution": "Node", // Resolve modules as Node does
+    "allowJs": true,      // Allow JavaScript files
+    "sourceMap": true     // Generate source maps
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
