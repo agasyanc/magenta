@@ -17,6 +17,8 @@ export default class Viewport {
   render() {
     const ctx = this.canvas.getContext('2d');
     if (!ctx) return;
+    ctx.resetTransform()
+    ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
     ctx.translate(this.pan.x + this.canvas.width/2, this.pan.y + this.canvas.height/2);
     ctx.scale(this.zoom, this.zoom);
     this.renderers.render(this._document, ctx);

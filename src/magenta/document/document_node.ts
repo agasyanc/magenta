@@ -1,5 +1,6 @@
 import BaseNode from "./base_node";
 import PageNode from "./page_node";
+import TextNode from "./text_node";
 
 export default class DocumentNode extends BaseNode {
   name: string = 'Document';
@@ -7,10 +8,10 @@ export default class DocumentNode extends BaseNode {
 
     super();
     console.log('im documtent in magenta ');
-
-    const page = new PageNode()
-    this.add(page);
-
   }
-  
+  add_page():PageNode{
+    const page = new PageNode()
+    this.add(page)
+    return page
+  }
 }
